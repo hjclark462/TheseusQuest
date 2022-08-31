@@ -365,8 +365,8 @@ void NavMesh::Draw(bool connections)
 			DrawText(FormatText("% i", node->tracker), node->position.x, node->position.y, 15, RED);
 			DrawCircle(node->position.x, node->position.y, 2, RED);
 		}
-			DrawRectangle(m_lair.x, m_lair.y, m_lair.width, m_lair.height, RED);
-			DrawRectangle(m_exit.x, m_exit.y, m_exit.width, m_exit.height, RED);
+			/*DrawRectangle(m_lair.x, m_lair.y, m_lair.width, m_lair.height, RED);
+			DrawRectangle(m_exit.x, m_exit.y, m_exit.width, m_exit.height, RED);*/
 	}
 	// draw obstacles
 	for (auto& o : m_obstacles)

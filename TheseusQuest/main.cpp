@@ -224,14 +224,14 @@ int main(int argc, char* argv[])
 		cur_time = fTime;
 
 		BeginDrawing();
-		ClearBackground(BEIGE);
+		ClearBackground(BLACK);
 		// Set to true to show debug information.
-		navMesh.Draw(false);
+		navMesh.Draw(true);
 		
 		// Debug of AStar path and Smoothed Path
-		//DrawPath(player.GetPath(), player.GetColor());
-		//std::vector<glm::vec2> jaggedPath = player.GetJaggedPath();
-		//DrawPath(jaggedPath, GREEN);
+		DrawPath(player.GetPath(), player.GetColor());
+		std::vector<glm::vec2> jaggedPath = player.GetJaggedPath();
+		DrawPath(jaggedPath, GREEN);
 		//DrawPath(Minotaur.GetPath(), Minotaur.GetColor());
 
 		player.Update(deltaTime);

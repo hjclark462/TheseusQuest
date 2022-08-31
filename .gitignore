@@ -29,5 +29,6 @@
 # Executables
 *.exe
 !TheseusQuest.exe
+!TheseusQuestDebug.exe
 *.out
 *.app
