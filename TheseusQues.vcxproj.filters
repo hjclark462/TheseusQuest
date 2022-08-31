@@ -1,0 +1,315 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Agent.cpp">
+      <Filter>Source Files\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="NavMesh.cpp">
+      <Filter>Source Files\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="PathAgent.cpp">
+      <Filter>Source Files\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Pathfinding.cpp">
+      <Filter>Source Files\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="State.cpp">
+      <Filter>Source Files\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Utilities.cpp">
+      <Filter>Source Files\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="FiniteStateMachine.cpp">
+      <Filter>Source Files\Behaviours</Filter>
+    </ClCompile>
+    <ClCompile Include="FollowBehaviour.cpp">
+      <Filter>Source Files\Behaviours</Filter>
+    </ClCompile>
+    <ClCompile Include="GoToPointBehaviour.cpp">
+      <Filter>Source Files\Behaviours</Filter>
+    </ClCompile>
+    <ClCompile Include="SelectorBehaviour.cpp">
+      <Filter>Source Files\Behaviours</Filter>
+    </ClCompile>
+    <ClCompile Include="WanderBehaviour.cpp">
+      <Filter>Source Files\Behaviours</Filter>
+    </ClCompile>
+    <ClCompile Include="DistanceCondition.cpp">
+      <Filter>Source Files\Conditions</Filter>
+    </ClCompile>
+    <ClCompile Include="poly2tri\common\shapes.cc">
+      <Filter>Source Files\PolyTri\common</Filter>
+    </ClCompile>
+    <ClCompile Include="poly2tri\sweep\advancing_front.cc">
+      <Filter>Source Files\PolyTri\sweep</Filter>
+    </ClCompile>
+    <ClCompile Include="poly2tri\sweep\cdt.cc">
+      <Filter>Source Files\PolyTri\sweep</Filter>
+    </ClCompile>
+    <ClCompile Include="poly2tri\sweep\sweep.cc">
+      <Filter>Source Files\PolyTri\sweep</Filter>
+    </ClCompile>
+    <ClCompile Include="poly2tri\sweep\sweep_context.cc">
+      <Filter>Source Files\PolyTri\sweep</Filter>
+    </ClCompile>
+    <ClCompile Include="Obstacle.cpp">
+      <Filter>Source Files\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="PaceBehaviour.cpp">
+      <Filter>Source Files\Behaviours</Filter>
+    </ClCompile>
+    <ClCompile Include="ReturnBehaviour.cpp">
+      <Filter>Source Files\Behaviours</Filter>
+    </ClCompile>
+    <ClCompile Include="DazeBehaviour.cpp">
+      <Filter>Source Files\Behaviours</Filter>
+    </ClCompile>
+    <ClCompile Include="TimeCondition.cpp">
+      <Filter>Source Files\Conditions</Filter>
+    </ClCompile>
+    <ClCompile Include="ReturnedCondition.cpp">
+      <Filter>Source Files\Conditions</Filter>
+    </ClCompile>
+    <ClCompile Include="FreeChildCondition.cpp">
+      <Filter>Source Files\Conditions</Filter>
+    </ClCompile>
+    <ClCompile Include="NoLineOfSightCondition.cpp">
+      <Filter>Source Files\Conditions</Filter>
+    </ClCompile>
+    <ClCompile Include="ABDecision.cpp">
+      <Filter>Source Files\Decisions</Filter>
+    </ClCompile>
+    <ClCompile Include="InLairCondition.cpp">
+      <Filter>Source Files\Conditions</Filter>
+    </ClCompile>
+    <ClCompile Include="ScaredDecision.cpp">
+      <Filter>Source Files\Decisions</Filter>
+    </ClCompile>
+    <ClCompile Include="SeeMinotaurCondition.cpp">
+      <Filter>Source Files\Conditions</Filter>
+    </ClCompile>
+    <ClCompile Include="BraveryCondition.cpp">
+      <Filter>Source Files\Conditions</Filter>
+    </ClCompile>
+    <ClCompile Include="BraveDecision.cpp">
+      <Filter>Source Files\Decisions</Filter>
+    </ClCompile>
+    <ClCompile Include="SearchExitDecision.cpp">
+      <Filter>Source Files\Decisions</Filter>
+    </ClCompile>
+    <ClCompile Include="LeaveCondition.cpp">
+      <Filter>Source Files\Conditions</Filter>
+    </ClCompile>
+    <ClCompile Include="LeaveDecision.cpp">
+      <Filter>Source Files\Decisions</Filter>
+    </ClCompile>
+    <ClCompile Include="CaughtDecision.cpp">
+      <Filter>Source Files\Decisions</Filter>
+    </ClCompile>
+    <ClCompile Include="DecisionBehaviour.cpp">
+      <Filter>Source Files\Behaviours</Filter>
+    </ClCompile>
+    <ClCompile Include="WASDBehaviour.cpp">
+      <Filter>Source Files\Behaviours</Filter>
+    </ClCompile>
+    <ClCompile Include="DeathBehaviour.cpp">
+      <Filter>Source Files\Behaviours</Filter>
+    </ClCompile>
+    <ClCompile Include="CaughtByMinotaurCondition.cpp">
+      <Filter>Source Files\Conditions</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Agent.h">
+      <Filter>Header Files\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="ReturnedCondition.h">
+      <Filter>Header Files\Conditions</Filter>
+    </ClInclude>
+    <ClInclude Include="Condition.h">
+      <Filter>Header Files\Conditions</Filter>
+    </ClInclude>
+    <ClInclude Include="DistanceCondition.h">
+      <Filter>Header Files\Conditions</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers.h">
+      <Filter>Header Files\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="NavMesh.h">
+      <Filter>Header Files\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="PathAgent.h">
+      <Filter>Header Files\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Pathfinding.h">
+      <Filter>Header Files\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="State.h">
+      <Filter>Header Files\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities.h">
+      <Filter>Header Files\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="poly2tri\poly2tri.h">
+      <Filter>Header Files\PolyTri</Filter>
+    </ClInclude>
+    <ClInclude Include="poly2tri\common\shapes.h">
+      <Filter>Header Files\PolyTri\common</Filter>
+    </ClInclude>
+    <ClInclude Include="poly2tri\common\utils.h">
+      <Filter>Header Files\PolyTri\common</Filter>
+    </ClInclude>
+    <ClInclude Include="poly2tri\sweep\advancing_front.h">
+      <Filter>Header Files\PolyTri\sweep</Filter>
+    </ClInclude>
+    <ClInclude Include="poly2tri\sweep\cdt.h">
+      <Filter>Header Files\PolyTri\sweep</Filter>
+    </ClInclude>
+    <ClInclude Include="poly2tri\sweep\sweep.h">
+      <Filter>Header Files\PolyTri\sweep</Filter>
+    </ClInclude>
+    <ClInclude Include="poly2tri\sweep\sweep_context.h">
+      <Filter>Header Files\PolyTri\sweep</Filter>
+    </ClInclude>
+    <ClInclude Include="Decision.h">
+      <Filter>Header Files\Decisions</Filter>
+    </ClInclude>
+    <ClInclude Include="ABDecision.h">
+      <Filter>Header Files\Decisions</Filter>
+    </ClInclude>
+    <ClInclude Include="Obstacle.h">
+      <Filter>Header Files\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Behaviour.h">
+      <Filter>Header Files\Behaviours</Filter>
+    </ClInclude>
+    <ClInclude Include="FiniteStateMachine.h">
+      <Filter>Header Files\Behaviours</Filter>
+    </ClInclude>
+    <ClInclude Include="GoToPointBehaviour.h">
+      <Filter>Header Files\Behaviours</Filter>
+    </ClInclude>
+    <ClInclude Include="PaceBehaviour.h">
+      <Filter>Header Files\Behaviours</Filter>
+    </ClInclude>
+    <ClInclude Include="ReturnBehaviour.h">
+      <Filter>Header Files\Behaviours</Filter>
+    </ClInclude>
+    <ClInclude Include="FollowBehaviour.h">
+      <Filter>Header Files\Behaviours</Filter>
+    </ClInclude>
+    <ClInclude Include="SelectorBehaviour.h">
+      <Filter>Header Files\Behaviours</Filter>
+    </ClInclude>
+    <ClInclude Include="WanderBehaviour.h">
+      <Filter>Header Files\Behaviours</Filter>
+    </ClInclude>
+    <ClInclude Include="DazeBehaviour.h">
+      <Filter>Header Files\Behaviours</Filter>
+    </ClInclude>
+    <ClInclude Include="TimeCondition.h">
+      <Filter>Header Files\Conditions</Filter>
+    </ClInclude>
+    <ClInclude Include="FreeChildCondition.h">
+      <Filter>Header Files\Conditions</Filter>
+    </ClInclude>
+    <ClInclude Include="NoLineOfSightCondition.h">
+      <Filter>Header Files\Conditions</Filter>
+    </ClInclude>
+    <ClInclude Include="InLairCondition.h">
+      <Filter>Header Files\Conditions</Filter>
+    </ClInclude>
+    <ClInclude Include="ScaredDecision.h">
+      <Filter>Header Files\Decisions</Filter>
+    </ClInclude>
+    <ClInclude Include="SeeMinotaurCondition.h">
+      <Filter>Header Files\Conditions</Filter>
+    </ClInclude>
+    <ClInclude Include="BraveryCondition.h">
+      <Filter>Header Files\Conditions</Filter>
+    </ClInclude>
+    <ClInclude Include="BraveDecision.h">
+      <Filter>Header Files\Decisions</Filter>
+    </ClInclude>
+    <ClInclude Include="SearchExitDecision.h">
+      <Filter>Header Files\Decisions</Filter>
+    </ClInclude>
+    <ClInclude Include="LeaveCondition.h">
+      <Filter>Header Files\Conditions</Filter>
+    </ClInclude>
+    <ClInclude Include="LeaveDecision.h">
+      <Filter>Header Files\Decisions</Filter>
+    </ClInclude>
+    <ClInclude Include="CaughtDecision.h">
+      <Filter>Header Files\Decisions</Filter>
+    </ClInclude>
+    <ClInclude Include="DecisionBehaviour.h">
+      <Filter>Header Files\Behaviours</Filter>
+    </ClInclude>
+    <ClInclude Include="WASDBehaviour.h">
+      <Filter>Header Files\Behaviours</Filter>
+    </ClInclude>
+    <ClInclude Include="CaughtByMinotaurCondition.h">
+      <Filter>Header Files\Conditions</Filter>
+    </ClInclude>
+    <ClInclude Include="DeathBehaviour.h">
+      <Filter>Header Files\Behaviours</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{606d3f2f-7046-4488-b4c8-5b22356fe934}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Base">
+      <UniqueIdentifier>{6d48aaeb-16bc-4427-85d0-fac85eb12157}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Behaviours">
+      <UniqueIdentifier>{dd8d99fa-83f5-4065-8819-abb43ceea51d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Conditions">
+      <UniqueIdentifier>{4cfd44cc-f373-4763-a639-b243695eb087}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\PolyTri">
+      <UniqueIdentifier>{644d578e-7ccc-4115-86a0-41b6b0381af7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{e52292bb-214e-4a6d-b000-02527b4b17da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{6d28b370-73fb-42f8-8d73-b3496a861e63}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Base">
+      <UniqueIdentifier>{167b999e-b031-4974-b42b-21d3dbb35781}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Behaviours">
+      <UniqueIdentifier>{75c898a0-f31b-428f-9d0d-21f5ca283a6c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Conditions">
+      <UniqueIdentifier>{f750fa68-f692-4c8c-a281-df3a3dfcf70c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\PolyTri\common">
+      <UniqueIdentifier>{16ad8663-29ff-4dfd-9687-27792481d337}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\PolyTri\sweep">
+      <UniqueIdentifier>{7b5e4241-a030-48c0-be71-b815154aae02}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Decisions">
+      <UniqueIdentifier>{bb947232-a0ad-4a2b-8842-77653711e1de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Decisions">
+      <UniqueIdentifier>{35656897-5309-48e4-85cf-b02565c01c62}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\PolyTri">
+      <UniqueIdentifier>{1b409222-056d-4ae7-956f-a908e87ce699}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\PolyTri\common">
+      <UniqueIdentifier>{1b3fb25c-79e2-489b-b6d7-1b1e26052a78}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\PolyTri\sweep">
+      <UniqueIdentifier>{53a962cb-27f0-4d9a-86e5-9f156fb4989f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
