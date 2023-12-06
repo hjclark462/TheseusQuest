@@ -1,4 +1,12 @@
 .vs/
-x64/
-!*/64/Debug/raylib.lib
-!*/64/Release/raylib.lib
+x64/*
+!x64/Release/raylib.lib
+Raylib/bin/x64/Release.DLL/raylib.pdb
+Raylib/bin/x64/Release.DLL/raylib.lib
+Raylib/bin/x64/Release.DLL/raylib.exp
+Raylib/bin/x64/Release.DLL/raylib.dll
+Raylib/bin/x64/Debug.DLL/raylib.pdb
+Raylib/bin/x64/Debug.DLL/raylib.lib
+Raylib/bin/x64/Debug.DLL/raylib.ilk
+Raylib/bin/x64/Debug.DLL/raylib.exp
+Raylib/bin/x64/Debug.DLL/raylib.dll
