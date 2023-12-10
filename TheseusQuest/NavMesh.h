@@ -2,6 +2,7 @@
 #include "Pathfinding.h"
 #include "poly2tri/poly2tri.h"
 #include "Obstacle.h"
+#include "Utilities.h"
 
 using namespace AIForGames;
 
@@ -45,6 +46,6 @@ private:
 	Rectangle m_exit = { 1340, 640, 260, 300 };
 	// this is used for building the mesh uses Poly2Tri (https://github.com/greenm01/poly2tri)
 	p2t::CDT* m_cdt;
-	std::vector<std::vector<p2t::Point*>> m_polygons;	
+	std::vector<std::vector<p2t::Point*>> m_polygons;		
 };
 

@@ -350,7 +350,7 @@ void NavMesh::Build()
 
 void NavMesh::Draw(bool connections)
 {
-	Color lineColor = SKYBLUE;
+	Color lineColor = DARKGREEN;
 	Color obstacleColor = DARKBROWN;
 
 	// draw nav mesh polygons, lair and exit AABBs for debugging
@@ -359,11 +359,11 @@ void NavMesh::Draw(bool connections)
 		for (int i = 0; i < m_nodes.size(); i++)
 		{
 			auto node = m_nodes[i];
-			DrawLine((int)node->vertices[0].x, (int)node->vertices[0].y, (int)node->vertices[1].x, (int)node->vertices[1].y, lineColor);
-			DrawLine((int)node->vertices[1].x, (int)node->vertices[1].y, (int)node->vertices[2].x, (int)node->vertices[2].y, lineColor);
-			DrawLine((int)node->vertices[2].x, (int)node->vertices[2].y, (int)node->vertices[0].x, (int)node->vertices[0].y, lineColor);
-			DrawText(FormatText("% i", node->tracker), node->position.x, node->position.y, 15, RED);
-			DrawCircle(node->position.x, node->position.y, 2, RED);
+			DrawLineEx(Utilities::ConvertVector(node->vertices[0]), Utilities::ConvertVector(node->vertices[1]), 2, lineColor);
+			DrawLineEx(Utilities::ConvertVector(node->vertices[1]), Utilities::ConvertVector(node->vertices[2]), 2, lineColor);
+			DrawLineEx(Utilities::ConvertVector(node->vertices[2]), Utilities::ConvertVector(node->vertices[0]), 2, lineColor);
+			//DrawText(FormatText("% i", node->tracker), node->position.x, node->position.y, 15, RED);
+			DrawCircle(node->position.x, node->position.y, 3, RED);
 		}
 			/*DrawRectangle(m_lair.x, m_lair.y, m_lair.width, m_lair.height, RED);
 			DrawRectangle(m_exit.x, m_exit.y, m_exit.width, m_exit.height, RED);*/

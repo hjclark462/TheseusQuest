@@ -1,0 +1,12 @@
+﻿  main.cpp
+D:\C++Projects\TheseusQuest\TheseusQuest\poly2tri\sweep\sweep_context.h(161,22): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+D:\C++Projects\TheseusQuest\TheseusQuest\main.cpp(39,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+D:\C++Projects\TheseusQuest\TheseusQuest\main.cpp(43,31): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\C++Projects\TheseusQuest\TheseusQuest\main.cpp(43,18): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\C++Projects\TheseusQuest\TheseusQuest\main.cpp(84,42): warning C4305: 'argument': truncation from 'double' to 'float'
+  Generating code
+  1 of 1401 functions (<0.1%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  TheseusQues.vcxproj -> D:\C++Projects\TheseusQuest\bin\x64\Release\TheseusQuest.exe

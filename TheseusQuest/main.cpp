@@ -68,8 +68,8 @@ int main(int argc, char* argv[])
 	Agent child3(&navMesh, lair1, 8, childSpeed, child3Start, "child3");
 	// Vector for handing all children to behaviours
 	std::vector<Agent*> children;
-	children.push_back(&child1); 
-	children.push_back(&child2); 
+	children.push_back(&child1);
+	children.push_back(&child2);
 	children.push_back(&child3);
 
 #pragma endregion
@@ -107,7 +107,7 @@ int main(int argc, char* argv[])
 
 	// Pursuing State of the Minotaur
 	FollowBehaviour* pursue = new FollowBehaviour(&player, children, 1);
-	
+
 	State* pursuing = new State(pursue);
 
 	// Stunned State of the Minotaur
@@ -115,7 +115,7 @@ int main(int argc, char* argv[])
 	State* stunned = new State(dazed);
 
 	// Returning State of the Minotaur
-	GoToPointBehaviour* lair3 = new GoToPointBehaviour(minotaurStart);	
+	GoToPointBehaviour* lair3 = new GoToPointBehaviour(minotaurStart);
 	State* returning = new State(lair3);
 
 	// Conditions to leave pacing
@@ -126,10 +126,10 @@ int main(int argc, char* argv[])
 
 	// Conditions to leave patrolling
 	DistanceCondition* seeTarget = new DistanceCondition(500, &player, children, true);
-	ReturnedCondition* returnedChild = new ReturnedCondition(children, true);	
+	ReturnedCondition* returnedChild = new ReturnedCondition(children, true);
 	patrolling->AddTransition(seeTarget, pursuing);
 	patrolling->AddTransition(returnedChild, pacing);
-	
+
 	//Conditions to leave pursuing
 	NoLineOfSightCondition* noTargets = new NoLineOfSightCondition(&player, children);
 	DistanceCondition* catchTarget = new DistanceCondition(5, &player, children, true);
@@ -187,18 +187,18 @@ int main(int argc, char* argv[])
 	child1.SetTarget(&Minotaur);
 	child1.SetColor(BLUE);
 	child1.SetSize(10);
-		
+
 	child2.SetBehaviour(decisionTree);
 	child2.SetOriginalPosition(child2Start);
 	child2.SetPosition(child2Start);
-	child2.SetTarget(&Minotaur); 
+	child2.SetTarget(&Minotaur);
 	child2.SetColor(BLUE);
 	child2.SetSize(10);
-	
+
 	child3.SetBehaviour(decisionTree);
 	child3.SetOriginalPosition(child3Start);
 	child3.SetPosition(child3Start);
-	child3.SetTarget(&Minotaur); 
+	child3.SetTarget(&Minotaur);
 	child3.SetColor(BLUE);
 	child3.SetSize(10);
 
@@ -215,8 +215,9 @@ int main(int argc, char* argv[])
 #pragma endregion
 
 
-
-	SetTargetFPS(60);	
+	bool playerDebug = true;
+	bool minotaurDebug = true;
+	SetTargetFPS(60);
 	while (!WindowShouldClose())    // Detect window close button or ESC key
 	{
 		float fTime = (float)GetTime();
@@ -227,19 +228,28 @@ int main(int argc, char* argv[])
 		ClearBackground(BLACK);
 		// Set to true to show debug information.
 		navMesh.Draw(true);
-		
+
 		// Debug of AStar path and Smoothed Path
-		DrawPath(player.GetPath(), player.GetColor());
-		std::vector<glm::vec2> jaggedPath = player.GetJaggedPath();
-		DrawPath(jaggedPath, GREEN);
-		//DrawPath(Minotaur.GetPath(), Minotaur.GetColor());
+
+		if (playerDebug)
+		{
+			DrawPath(player.GetPath(), player.GetColor());
+			std::vector<glm::vec2> jaggedPath = player.GetJaggedPath();
+			DrawPath(jaggedPath, GREEN);
+		}
+		if (minotaurDebug)
+		{
+			DrawPath(Minotaur.GetPath(), ORANGE);
+			std::vector<glm::vec2> jaggedPath = Minotaur.GetJaggedPath();
+			DrawPath(jaggedPath, DARKBLUE);
+		}
 
 		player.Update(deltaTime);
 		Minotaur.Update(deltaTime);
-		child1.Update(deltaTime); 
-		child2.Update(deltaTime); 
+		child1.Update(deltaTime);
+		child2.Update(deltaTime);
 		child3.Update(deltaTime);
-		
+
 		player.Draw();
 		Minotaur.Draw();
 		child1.Draw();
@@ -247,7 +257,7 @@ int main(int argc, char* argv[])
 		child3.Draw();
 
 		EndDrawing();
-		if(player.GetLives() <= 0)
+		if (player.GetLives() <= 0)
 		{
 			CloseWindow();
 		}

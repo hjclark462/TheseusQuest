@@ -36,14 +36,14 @@ namespace AIForGames
 	{
 		float xDiff = abs(node->position.x - dest->position.x);
 		float yDiff = abs(node->position.y - dest->position.y);
-		
+
 		return xDiff + yDiff;
 	}
 
 	std::vector<Node*> AStarSearch(Node* startNode, Node* endNode)
 	{
-		int counterA =0;
-		
+		int counterA = 0;
+
 		// Validate the input
 		if (startNode == nullptr || endNode == nullptr)
 		{
@@ -70,11 +70,11 @@ namespace AIForGames
 		openList.push_back(startNode);
 
 		while (!openList.empty())
-		{			
+		{
 			counterA++;
 			//std::sort(openList.begin(), openList.end(), fSorter);
-			
-			currentNode = openList.front();		
+
+			currentNode = openList.front();
 			std::pop_heap(openList.begin(), openList.end(), fSorter);
 			openList.pop_back();
 			currentNode->closeListed = true;
@@ -104,7 +104,7 @@ namespace AIForGames
 						c.m_target->fScore = fScore;
 						c.m_target->previous = currentNode;
 						c.m_target->openListed = true;
-						openList.push_back(c.m_target);						
+						openList.push_back(c.m_target);
 					}
 					// Node is already in the openList with a valid Score. So compare the calculated Score 
 					// with the exisitng to find the shorter path.
@@ -121,7 +121,7 @@ namespace AIForGames
 
 		// Create Path in reverse from endNode to startNode
 		std::vector<Node*> path;
-		if(currentNode == endNode)
+		if (currentNode == endNode)
 		{
 			while (currentNode != nullptr)
 			{
@@ -142,12 +142,7 @@ namespace AIForGames
 	{
 		for (int i = 1; i < path.size(); i++)
 		{
-			DrawLine(
-				(path[i - 1].x),
-				(path[i - 1].y),
-				(path[i].x),
-				(path[i].y),
-				lineColor);
+			DrawLineEx(Utilities::ConvertVector(path[i - 1]), Utilities::ConvertVector(path[i]), 2, lineColor);
 		}
 	}
 }
